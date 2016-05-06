@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Solar System</title>
+	<style type="text/css">
+
+.structure {
+	position: absolute;
+	width: 1000px;
+	height: 1000px;
+	background-color: black;
+	top: 10px;
+	left: 250px;
+}
+
+@-webkit-keyframes spin-right {
+    100% {
+         -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.Sun {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border-radius: 200px;
+	background-color: yellow;
+	top:45%;
+	left: 30%;
+	margin-top: 0px; 
+    margin-left: 0px;
+  	border-color: orange;
+  	border-width: 2px;
+  	border-style: solid;
+  	box-shadow: 0 0 64px yellow;
+}
+
+.mercury {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	background-color: red;
+	top:97%;
+    left: 50%;
+	
+}
+
+.mercury-orbit{
+ 	position: absolute;
+    top: 68%;
+    left: 53%;
+
+    width: 250px;
+    height: 250px;
+	margin-top: -255px;
+    margin-left: -255px;
+
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+
+ -webkit-animation: spin-right 3s linear infinite;
+     -moz-animation: spin-right 3s linear infinite;
+      -ms-animation: spin-right 3s linear infinite;
+       -o-animation: spin-right 3s linear infinite;
+          animation: spin-right 3s linear infinite;
+}
+
+.venus {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	background-color: #F4E3CF;
+	top:50%;
+    left: 95%;
+}
+
+.venus-orbit {
+	position: absolute;
+    top: 68%;
+    left: 53%;
+
+    width: 300px;
+    height: 300px;
+	margin-top: -280px;
+    margin-left: -280px;
+
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+
+ -webkit-animation: spin-right 10s linear infinite;
+     -moz-animation: spin-right 10s linear infinite;
+      -ms-animation: spin-right 10s linear infinite;
+       -o-animation: spin-right 10s linear infinite;
+          animation: spin-right 10s linear infinite;
+}
+.earth {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	background-color: blue;
+	top:30%;
+    left: 95%;
+}
+.moon {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background-color: grey;
+	top:30%;
+    left: 95%;
+}
+.moon-orbit {
+	position: absolute;
+    top: -35%;
+    left: 40%;
+
+    width: 45px;
+    height: 45px;
+	margin-top: -20x;
+    margin-left: -20px;
+
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+    
+ -webkit-animation: spin-right 1s linear infinite;
+     -moz-animation: spin-right 1s linear infinite;
+      -ms-animation: spin-right 1s linear infinite;
+       -o-animation: spin-right 1s linear infinite;
+          animation: spin-right 1s linear infinite;
+}
+.earth-orbit {
+	position: absolute;
+    top: 68%;
+    left: 53%;
+
+    width: 370px;
+    height: 370px;
+	margin-top: -315px;
+    margin-left: -315px;
+
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+
+ -webkit-animation: spin-right 15s linear infinite;
+     -moz-animation: spin-right 15s linear infinite;
+      -ms-animation: spin-right 15s linear infinite;
+       -o-animation: spin-right 15s linear infinite;
+          animation: spin-right 15s linear infinite;
+}
+
+.mars {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+	background-color: red;
+	top:0%;
+    left: 65%;
+}
+.mars-orbit {
+	position: absolute;
+    top: 68%;
+    left: 53%;
+
+    width: 450px;
+    height: 450px;
+	margin-top: -350px;
+    margin-left: -350px;
+
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+
+ -webkit-animation: spin-right 20s linear infinite;
+     -moz-animation: spin-right 20s linear infinite;
+      -ms-animation: spin-right 20s linear infinite;
+       -o-animation: spin-right 20s linear infinite;
+          animation: spin-right 20s linear infinite;
+}
+.Jupiter {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	background-color: #993300;
+	top:0%;
+    left: 70%;
+}
+.Jupiter-orbit {
+	position: absolute;
+    top: 68%;
+    left: 53%;
+
+    width: 550px;
+    height: 550px;
+	margin-top: -400px;
+    margin-left: -400px;
+
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+
+ -webkit-animation: spin-right 40s linear infinite;
+     -moz-animation: spin-right 40s linear infinite;
+      -ms-animation: spin-right 40s linear infinite;
+       -o-animation: spin-right 40s linear infinite;
+          animation: spin-right 40s linear infinite;
+}
+.circle {
+	position: absolute;
+	width: 110px;
+	height: 110px;
+	border-radius: 110px;
+	background-color:#ccccb3;
+	top:0%;
+	left: 0%;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.circle2
+{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	border-radius: 80px;
+	background-color:black;
+	top:0%;
+	left: 0%;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+.circle-orbit{
+	position: absolute;
+    top: 0%;
+    left: 150%;
+
+    width: 120px;
+    height: 120px;
+	margin-top: -45px;
+    margin-left: -45px;
+
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+
+}
+
+.planet {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	background-color: grey;
+	top:0%;
+   	left: 0%;
+   	margin-top: 15px;
+   	margin-left: 15px;
+	
+}
+.Saturn-orbit {
+	position: absolute;
+    top: 68%;
+    left: 53%;
+
+    width: 700px;
+    height: 700px;
+	margin-top: -480px;
+    margin-left: -480px;
+
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+
+ -webkit-animation: spin-right 60s linear infinite;
+     -moz-animation: spin-right 60s linear infinite;
+      -ms-animation: spin-right 60s linear infinite;
+       -o-animation: spin-right 60s linear infinite;
+          animation: spin-right 60s linear infinite;
+}
+.Saturn {
+
+
+	position: absolute;
+    top: 0%;
+    left: 25%;
+
+    width: 120px;
+    height: 120px;
+	margin-top: -25px;
+    margin-left: -25px;
+
+}
+.Uranus {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	background-color: #1f1f14;
+	top:20%;
+   	left: 90%;
+   	margin-top: 10px;
+   	margin-left: 10px;
+	
+}
+.Uranus-orbit {
+	position: absolute;
+    top: 68%;
+    left: 53%;
+
+    width: 850px;
+    height: 850px;
+	margin-top: -550px;
+    margin-left: -550px;
+
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+
+ -webkit-animation: spin-right 200s linear infinite;
+     -moz-animation: spin-right 200s linear infinite;
+      -ms-animation: spin-right 200s linear infinite;
+       -o-animation: spin-right 200s linear infinite;
+          animation: spin-right 200s linear infinite;
+}
+.Neptune {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	background-color: #000080;
+	top:80%;
+   	left: 85%;
+   	margin-top: 10px;
+   	margin-left: 10px;
+	
+}
+.Neptune-orbit {
+	position: absolute;
+    top: 68%;
+    left: 53%;
+
+    width: 950px;
+    height: 950px;
+	margin-top: -600px;
+    margin-left: -600px;
+
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+
+ -webkit-animation: spin-right 400s linear infinite;
+     -moz-animation: spin-right 400s linear infinite;
+      -ms-animation: spin-right 400s linear infinite;
+       -o-animation: spin-right 400s linear infinite;
+          animation: spin-right 400s linear infinite;
+}
+	</style>
+</head>
+<body class="structure">
+<!--Sun-->
+<div class="Sun"></div>
+<!--MERCURY-->
+<div class="mercury-orbit">
+	<div class="mercury"></div>
+</div>
+<!--Venus-->
+<div class="venus-orbit">
+	<div class="venus"></div>
+</div>
+<!--Earh-->
+<div class="earth-orbit">
+	<div class="earth">
+		<div class="moon-orbit">
+			<div class="moon"></div>
+		</div>
+	</div>
+</div>
+<!--Mars-->
+<div class="mars-orbit">
+	<div class="mars"></div>
+</div>
+<!--Jupiter-->
+<div class="Jupiter-orbit">
+	<div class="Jupiter"></div>
+</div>
+<!--Saturn-->
+<div class="Saturn-orbit">
+<div class="Saturn">
+	<div class="circle-orbit">
+		<div class="circle">
+			<div class="circle2">
+				<div class="planet">
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+<!--Uranus-->
+<div class="Uranus-orbit">
+	<div class="Uranus"></div>
+</div>
+<!--Neptune-->
+<div class="Neptune-orbit">
+	<div class="Neptune"></div>
+</div>
+
+
+</body>
+</html>
